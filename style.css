@@ -1,11 +1,15 @@
 /*** css reset ***/
 
 * {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
     box-sizing: border-box;
 }
-
+/*** general ***/
 body {
     color: #232323;
     font-family: 'Lato', sans-serif;
@@ -23,6 +27,11 @@ h2 {
     margin-top: 15px;
 }
 
+.row {
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+
 /*** header section ***/
 
 .logo img {
@@ -37,7 +46,7 @@ h2 {
  position: fixed;
  top: 0;
  z-index: 1;
- width: 100%;
+ width: 100vw;
  padding: 0 5%;
 }
 
@@ -47,17 +56,17 @@ h2 {
 
 /*** hero section ***/
 .hero {
-    margin-top: 100px;
+    margin-top: 8%;
 }
 
-.hero-img {
+.hero-img img {
     position: relative;
 }
 
 .hero-text {
     position: absolute;
     top: 35%;
-    left: 25%;   
+    left: 30%;   
     margin: 0 auto;
     background-color: #ffffff8c;
     padding: 40px;
@@ -71,7 +80,7 @@ h2 {
 /*** product section ***/
 
 main {
-    margin: 100px 0;
+    margin: 8% 0;
     text-align: center;
 }
 
@@ -80,8 +89,12 @@ main {
     height: auto;
 }
 
+.product-img {
+    padding: 0;
+}
+
 .products2 {
-    margin-bottom: 100px;
+    margin-bottom: 8%;
 }
 
 /*** about us section ***/
@@ -100,7 +113,7 @@ main {
 /*** contact us section ***/
 
 .contactUs {
-    margin: 100px 0;
+    margin: 8% 0;
 }
 
 #form {
@@ -136,6 +149,41 @@ footer p {
         left: 0;
     }
 }
+
+@media (max-width: 415px) {
+
+    .product-img {
+       margin-bottom: 20px;
+    }
+
+    .aboutUs {
+        padding: 40px 0;
+    }
+
+    .aboutUs-img img {
+        width: 100%;
+    }
+
+    .aboutUs-p {
+       margin-top: 20px;
+       padding: 20px;
+       text-align: center;
+    }
+
+    iframe {
+        padding: 40px;
+    }
+
+    .adviceP {
+        padding: 20px;
+    }
+
+    #form {
+        width: 80%;
+    }
+}
+
+
 
 
 
