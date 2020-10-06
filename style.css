@@ -1,5 +1,4 @@
 /*** css reset ***/
-
 * {
     margin: 0 ;
     padding: 0;
@@ -9,6 +8,7 @@
     background: transparent;
     box-sizing: border-box;
 }
+
 /*** general ***/
 body {
     color: #232323;
@@ -30,10 +30,9 @@ h2 {
 .row {
     padding-right: 0px;
     margin-right: 0px;
-  }
+}
 
 /*** header section ***/
-
 .logo img {
     width: 40%;
     height: auto;
@@ -56,7 +55,7 @@ h2 {
 
 /*** hero section ***/
 .hero {
-    margin-top: 8%;
+    margin-top: 6%;
 }
 
 .hero-img img {
@@ -78,7 +77,6 @@ h2 {
 }
 
 /*** product section ***/
-
 main {
     margin: 8% 0;
     text-align: center;
@@ -98,7 +96,6 @@ main {
 }
 
 /*** about us section ***/
-
 .aboutUs {
     background-color: #e3e3e3;
     padding: 40px;
@@ -111,7 +108,6 @@ main {
 }
 
 /*** contact us section ***/
-
 .contactUs {
     margin: 8% 0;
 }
@@ -122,7 +118,6 @@ main {
 }
 
 /*** footer section ***/
-
 footer {
     height: 100px;
     background-color: #e3e3e3;
@@ -140,7 +135,6 @@ footer p {
 }
 
 /*** media queries ***/
-
 @media (max-width: 770px) {
 
     .hero-text {
