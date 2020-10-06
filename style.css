@@ -1,0 +1,142 @@
+/*** css reset ***/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #232323;
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    margin-bottom: 50px;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+}
+
+.btn {
+    background-color: #a88989;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+/*** header section ***/
+
+.logo img {
+    width: 40%;
+    height: auto;
+}
+
+.navbar {
+ background: #ffffff !important;
+ font-size: 18px;
+ text-transform: capitalize;
+ position: fixed;
+ top: 0;
+ z-index: 1;
+ width: 100%;
+ padding: 0 5%;
+}
+
+.nav-item {
+    padding: 0 0 0 20px;
+}
+
+/*** hero section ***/
+.hero {
+    margin-top: 100px;
+}
+
+.hero-img {
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 35%;
+    left: 25%;   
+    margin: 0 auto;
+    background-color: #ffffff8c;
+    padding: 40px;
+    border-radius: 7px;     
+}
+
+.hero-text h1 {
+    text-transform: capitalize;    
+}
+
+/*** product section ***/
+
+main {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.product-img img {
+    width: 60%;
+    height: auto;
+}
+
+.products2 {
+    margin-bottom: 100px;
+}
+
+/*** about us section ***/
+
+.aboutUs {
+    background-color: #e3e3e3;
+    padding: 40px;
+    margin-bottom: 100px;
+}
+
+.aboutUs-img img {
+    width: 70%;
+    border-radius: 7px;
+}
+
+/*** contact us section ***/
+
+.contactUs {
+    margin: 100px 0;
+}
+
+#form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*** footer section ***/
+
+footer {
+    height: 100px;
+    background-color: #e3e3e3;
+}
+
+footer p {
+    padding: 40px 0 20px 5%;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/*** psuedo classes ***/
+.btn:hover {
+    background-color: #a88989b0;
+}
+
+/*** media queries ***/
+
+@media (max-width: 770px) {
+
+    .hero-text {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+
+
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>The Funiture Company</title>
+</head>
+<body>
+    <header id="header">
+        <!-- navbar section-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
+            <div class="logo">
+                <a class="navbar-brand" href="#"> <img id="header-img" src="img/logo.jpg" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#header">home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#shop">shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">about us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">contact us</a>
+                  </li>
+              </ul>
+              
+            </div>
+          </nav>
+    </header>
+
+    <!-- hero section-->
+    <section class="hero">
+        <div class="hero-img container">
+            <img src="img/pink-room.jpg" alt="" class="img-fluid">
+          </div>
+
+          <div class="hero-text text-center">
+            <h1 class="display-4">the funiture company</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra
+                <br> attention to featured content or information.</p>
+            <hr class="my-4">
+            <a class="btn btn-lg" href="#" role="button">Shop Now</a>
+          </div>
+    </section>
+
+    <main>
+        <!-- products section-->
+        <h2 id="shop">best selling items</h2>
+
+        <div class="products1 row d-flex justify-content-around">
+            <div class="col-md-4 product-img">
+                <img src="img/bed.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-4 product-img">
+                <img src="img/couch.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-4 product-img">
+                <img src="img/coffee-table.jpg" class="img-fluid" alt="">
+            </div>
+
+            
+        </div>
+
+        <div class="products2 row d-flex justify-content-around mt-4">
+            <div class="col-md-4 product-img">
+                <img src="img/coffee-table2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-4 product-img">
+                <img src="img/side-table.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-4 product-img">
+                <img src="img/rug.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+
+        <!-- about us section-->
+        <h2 id="about">about us</h2>
+        <section class="aboutUs justify-content-center d-flex">
+            
+           <div class="container row">
+                <div class="aboutUs-img col-md-6 justify-content-center d-flex">
+                <img src="img/green-room.jpg" class="img-fluid" alt="logo">
+                </div>
+
+                <div class="aboutUs-p col-md-6">
+                    <p class="lead text-left">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, voluptates quam architecto hic corrupti dolorum sed sapiente officia neque cum aliquid aut totam consequuntur enim perferendis! Sit eius reprehenderit cupiditate. Quia, voluptates quam architecto hic corrupti dolorum sed sapiente officia neque cum aliquid aut totam consequuntur enim perferendis! Sit eius reprehenderit cupiditate. Quia, voluptates quam architecto hic corrupti dolorum sed sapiente officia neque cum aliquid aut totam consequuntur enim perferendis! Sit eius reprehenderit cupiditate.
+                    </p>
+                </div>
+           </div>
+        </section>
+
+        <h2>take advice from our customers!</h2>
+
+        <div class="justify-content-center d-flex row video">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Muqk63LH73I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <p class="mt-4 lead">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum architecto labore repellendus eveniet autem ipsa esse, <br>
+            distinctio officia eligendi possimus perferendis. Et ducimus sed recusandae, quod aut repellat vero voluptatibus! Harum <br> architecto labore repellendus eveniet autem ipsa esse, distinctio officia eligendi possimus perferendis. Et ducimus sed <br> recusandae, quod aut repellat vero voluptatibus. 
+        </p>
+
+        <!-- contact us section-->
+        <section class="contactUs" id="contact">
+            <h2>contact us</h2>
+            <div id="form">
+            
+                <form action="https://www.freecodecamp.com/email-submit">
+                    <input type="text" class="form-control mb-4" id="firstName" placeholder="First Name" required> 
+            
+                    <input type="text" class="form-control mb-4" id="lastName" placeholder="Last Name"  required> 
+               
+                    <input type="email" class="form-control mb-4" id="email" placeholder="Email Address" required> 
+        
+                    <textarea class="form-control" name="" id="" cols="40" rows="10" placeholder="How can we help?..."></textarea>
+
+                    <a href="#" class="btn btn-lg btn-block" id="submit">Submit</a>
+                </form>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&#169; 2020 courtney crawford</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
