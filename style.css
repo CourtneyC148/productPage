@@ -10,13 +10,17 @@
 }
 
 /*** general ***/
+html {
+    /* font-size: 62.5%; */
+}
+
 body {
     color: #232323;
     font-family: 'Lato', sans-serif;
 }
 
 h2 {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-transform: capitalize;
     letter-spacing: 1.2px;
 }
@@ -33,13 +37,14 @@ h2 {
 }
 
 /*** header section ***/
-.logo img {
-    width: 40%;
+.logo {
+    font-size: 30px;
     height: auto;
+    color: #ffffff;
 }
 
 .navbar {
- background: #ffffff !important;
+ background: #a88989 !important;
  font-size: 18px;
  text-transform: capitalize;
  position: fixed;
@@ -56,20 +61,22 @@ h2 {
 /*** hero section ***/
 .hero {
     margin-top: 6%;
+    position: relative;
 }
 
 .hero-img img {
-    position: relative;
+    /* position: relative; */
 }
 
 .hero-text {
     position: absolute;
-    top: 35%;
-    left: 30%;   
+    top: 25%;
+    left: 25%;   
     margin: 0 auto;
     background-color: #ffffff8c;
     padding: 40px;
-    border-radius: 7px;     
+    border-radius: 7px;
+    width: 50%;    
 }
 
 .hero-text h1 {
@@ -91,7 +98,7 @@ main {
     padding: 0;
 }
 
-.products2 {
+.products {
     margin-bottom: 8%;
 }
 
@@ -135,16 +142,64 @@ footer p {
 }
 
 /*** media queries ***/
-@media (max-width: 770px) {
+@media (max-width: 1036px) {
+
+    .hero {
+        margin-top: 10%;
+    }
+
+    .hero-text {
+        top: 10%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .hero {
+        margin-top: 15%;
+    }
+
+    .hero-text h1 {
+       font-size: 3rem;
+    }
+
+    .hero-text p br {
+        display: none;
+    }
 
     .hero-text {
         position: relative;
         top: 0;
         left: 0;
+        width: 100%;
+    }
+
+    .aboutUs-p p {
+       text-align: center !important;
+     }
+
+    .adviceP {
+        padding: 20px;
+    }
+
+    .adviceP br {
+        display: none;
     }
 }
 
 @media (max-width: 415px) {
+
+    .hero {
+        margin-top: 20%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.10rem;
+    }
 
     .product-img {
        margin-bottom: 20px;
@@ -161,15 +216,19 @@ footer p {
     .aboutUs-p {
        margin-top: 20px;
        padding: 20px;
-       text-align: center;
+    }
+
+    .aboutUs-p p {
+        font-size: 1.10rem;
     }
 
     iframe {
-        padding: 40px;
+        padding: 0 40px;
     }
 
     .adviceP {
         padding: 20px;
+        font-size: 1.10rem;
     }
 
     #form {
